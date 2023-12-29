@@ -42,7 +42,6 @@ h4 {
 
 .answer-img {
   width: 250px;
-  border: solid;
 }
 
 .picker {
@@ -70,4 +69,8 @@ h4 {
   background-color: aliceblue;
   margin: 20px 24% 20px 24%;
   padding: 10px 10px 10px 10px;
+}
+
+.borderin {
+  border: solid;
 }

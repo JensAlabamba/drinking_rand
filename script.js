@@ -80,4 +80,6 @@ function check() {
     answer.innerHTML = "Pij nie pierdol!";
     image.src = "monkey.jpeg";
   }
+  answer.classList.add("info1");
+  image.classList.add("borderin");
 }

@@ -48,7 +48,21 @@ function check() {
       answer.innerHTML =
         "Szanse na kolejne piwka lecą w dół!!! <strong>Ciesz się wygraną!</strong>";
     }
+  } else if (beerCount == 6 && shots == 9) {
+    answer.innerHTML = "69 Nice... Tu zawsze wygrana!";
+  } else if (beerCount >= 6 && shots > 0) {
+    chances -= 60;
+    if (checkin(chances) && place === "Knajpa") {
+      answer.innerHTML =
+        "<em>Szaleństwo!!!</em> Ile to można? Kto Ci tyle sprzedał? Do domu <strong>DEFINITYWNIE</strong>.";
+    } else if (checkin(chances) && place === "Prywatka") {
+      answer.innerHTML =
+        "Jak jeszcze nie zgonujesz, to zaraz zaczniesz pewnie. <strong>Basta!</strong>";
+    } else {
+      answer.innerHTML =
+        "Zwolnienie blokady.... Dziwne, wygrana. Ciesz się i pij!";
+    }
   } else {
-    answer.innerHTML = "Kombinacja piw i shotów? To może być ciekawe!";
+    answer.innerHTML = "Pij nie pierdol!";
   }
 }

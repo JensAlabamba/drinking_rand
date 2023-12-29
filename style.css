@@ -23,7 +23,7 @@ h4 {
   border-radius: 0 0 100px 100px;
   margin-left: 24%;
   margin-right: 24%;
-  padding: 20px 0 20px 0;
+  padding: 10px 10px 10px 10px;
   background-color: aliceblue;
 }
 .ruletteGif {
@@ -61,7 +61,8 @@ h4 {
 
 .info1 {
   border: solid;
+  border-radius: 50px;
   background-color: aliceblue;
   margin: 20px 24% 20px 24%;
-  padding: 10px 0 10px 0;
+  padding: 10px 10px 10px 10px;
 }

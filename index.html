@@ -25,12 +25,12 @@
     </div>
     <div>
       <p>Siedzisz w knajpie? Czy może na jakiej prywatce?</p>
-      <select>
+      <select id="place" class="picker">
         <option selected>Knajpa</option>
         <option>Prywatka</option>
       </select>
       <p>Ile <strong>piw</strong> zostało już wypitych?</p>
-      <select>
+      <select id="beers" class="picker">
         <option>0</option>
         <option>1</option>
         <option>2</option>
@@ -48,7 +48,7 @@
         (Myślimy o 40ml per jeden.)
         <strong>Ile?</strong>
       </p>
-      <select>
+      <select id="strongerDrinks" class="picker">
         <option>0</option>
         <option>1</option>
         <option>2</option>
@@ -62,11 +62,11 @@
         <option>10</option></select
       ><br />
       <br />
-      <button>Liczymy!</button>
+      <button class="button" onclick="check()">Liczymy!</button>
     </div>
-    <div>
-      <img src="" />
-      <p></p>
+    <div class="ans-div">
+      <img class="answer-img" src="" />
+      <p class="answer"></p>
     </div>
     <script src="script.js"></script>
   </body>

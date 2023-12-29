@@ -13,4 +13,19 @@ h1 {
 }
 .ruletteGif {
   width: 300px;
+  border-radius: 0 0 150px 150px;
 }
+
+.picker {
+  border-radius: 150px;
+}
+
+.button {
+  border-radius: 150px;
+  width: 100px;
+  height: 50px;
+}
+
+/* .ans-div {
+  border: solid;
+} */

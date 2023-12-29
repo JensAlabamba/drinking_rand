@@ -22,6 +22,7 @@ function check() {
     chances -= 5;
     if (checkin(chances)) {
       answer.innerHTML = "No niestety, koniec picia :/";
+      image.src = "zakaz.jpeg";
     } else {
       answer.innerHTML = "No jak to tak się nie napić!";
       image.src = "beerwin.gif";
@@ -30,6 +31,7 @@ function check() {
     chances -= 15;
     if (checkin(chances)) {
       answer.innerHTML = "A to pech! Czas zostawić to piwo w spokoju.";
+      image.src = "nobeer.jpeg";
     } else {
       answer.innerHTML = "Tylko browary dziś? Ciekawe. Dawaj dalej!";
       image.src = "beerwin2.gif";

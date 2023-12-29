@@ -2,7 +2,9 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: rgb(203, 145, 30);
+  background-image: url("bBackground.avif");
+  background-size: cover;
+  color: rgb(0, 0, 0);
   font-family: "Noto Serif", serif;
   font-family: "Roboto Slab", serif;
 }
@@ -30,6 +32,7 @@ h4 {
 
 .answer-img {
   width: 250px;
+  border: solid;
 }
 
 .picker {
@@ -41,7 +44,3 @@ h4 {
   width: 100px;
   height: 50px;
 }
-
-/* .ans-div {
-  border: solid;
-} */

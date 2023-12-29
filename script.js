@@ -3,6 +3,7 @@ function check() {
   const beerCount = document.getElementById("beers").value;
   const shots = document.getElementById("strongerDrinks").value;
   const answer = document.querySelector("p.answer");
+  const image = document.querySelector("img.answer-img");
   let chances = 100;
   const randomize = Math.floor(Math.random() * 100);
 
@@ -16,6 +17,7 @@ function check() {
 
   if (beerCount == 0 && shots == 0) {
     answer.innerHTML = "Zaczynamy! Pij!";
+    image.src = "beer1.gif";
   } else if (beerCount > 0 && beerCount <= 2 && shots == 0) {
     chances -= 5;
     if (checkin(chances)) {

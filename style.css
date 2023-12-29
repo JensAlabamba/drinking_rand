@@ -3,25 +3,33 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(203, 145, 30);
+  font-family: "Noto Serif", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 h1 {
   margin: 0;
   padding: 0;
-  height: 70px;
+  height: 50px;
   background-color: rgb(201, 188, 170);
+  padding-top: 25px;
 }
 
 h4 {
   border: solid;
-  margin-left: 40%;
-  margin-right: 40%;
+  border-radius: 0 0 100px 100px;
+  margin-left: 30%;
+  margin-right: 30%;
   padding: 20px 0 20px 0;
   background-color: white;
 }
 .ruletteGif {
   width: 300px;
   border-radius: 0 0 150px 150px;
+}
+
+.answer-img {
+  width: 250px;
 }
 
 .picker {

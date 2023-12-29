@@ -76,6 +76,23 @@ function check() {
         "Zwolnienie blokady.... Dziwne, wygrana. Ciesz się i pij!";
       image.src = "zwolnienie.avif";
     }
+  } else if (shots >= 3 && beerCount <= 7) {
+    chances -= 45;
+    if (checkin(chances) && place === "Knajpa") {
+      answer.innerHTML =
+        "Portfel wysuszony jak Ty jutro rano. Wody co najwyżej Ci powinni polać.";
+      image.src = "water.jpeg";
+    } else if (checkin(chances) && place === "Prywatka") {
+      answer.innerHTML =
+        "No i lipa. Koniec chlania. Ktoś musi chałupe ogarnąć z rana. :D";
+      image.src = "NerdParty.jpeg";
+    } else if (!checkin(chances) && place === "Knajpa") {
+      answer.innerHTML = "Pić by sie napił! A kto stawia?!";
+      image.src = "partyyy.jpeg";
+    } else {
+      answer.innerHTML = "A teraz idziemy na jednego!!!";
+      image.src = "vodka.webp";
+    }
   } else {
     answer.innerHTML = "Pij nie pierdol!";
     image.src = "monkey.jpeg";

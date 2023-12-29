@@ -24,6 +24,7 @@ function check() {
       answer.innerHTML = "No niestety, koniec picia :/";
     } else {
       answer.innerHTML = "No jak to tak się nie napić!";
+      image.src = "beerwin.gif";
     }
   } else if (beerCount > 2 && beerCount <= 4 && shots == 0) {
     chances -= 15;
@@ -31,40 +32,50 @@ function check() {
       answer.innerHTML = "A to pech! Czas zostawić to piwo w spokoju.";
     } else {
       answer.innerHTML = "Tylko browary dziś? Ciekawe. Dawaj dalej!";
+      image.src = "beerwin2.gif";
     }
   } else if (beerCount <= 4 && shots <= 3 && beerCount >= 2 && shots >= 1) {
     chances -= 30;
     if (checkin(chances)) {
       answer.innerHTML =
         "Robi się gorąco. Mix ten doprowadził Cie do <strong>końca</strong> zabawy.";
+      image.src = "too_much.gif";
     } else {
       answer.innerHTML =
         "Chyba mamy tu do czynienia ze <strong>SMAKOŁYSZEM</strong>. Pij dalej!";
+      image.src = "smako.jpeg";
     }
   } else if (beerCount > 4 && beerCount <= 6 && shots <= 1) {
     chances -= 40;
     if (checkin(chances)) {
       answer.innerHTML =
         "Konkretny wynik, <em>szacuneczek</em>. I tu mamy koniec. :(";
+      image.src = "ricky.gif";
     } else {
       answer.innerHTML =
         "Szanse na kolejne piwka lecą w dół!!! <strong>Ciesz się wygraną!</strong>";
+      image.src = "too_much.gif";
     }
   } else if (beerCount == 6 && shots == 9) {
     answer.innerHTML = "69 Nice... Tu zawsze wygrana!";
+    image.src = "nice.gif";
   } else if (beerCount >= 6 && shots > 0) {
     chances -= 60;
     if (checkin(chances) && place === "Knajpa") {
       answer.innerHTML =
         "<em>Szaleństwo!!!</em> Ile to można? Kto Ci tyle sprzedał? Do domu <strong>DEFINITYWNIE</strong>.";
+      image.src = "bartender.jpeg";
     } else if (checkin(chances) && place === "Prywatka") {
       answer.innerHTML =
         "Jak jeszcze nie zgonujesz, to zaraz zaczniesz pewnie. <strong>Basta!</strong>";
+      image.src = "zgon.jpeg";
     } else {
       answer.innerHTML =
         "Zwolnienie blokady.... Dziwne, wygrana. Ciesz się i pij!";
+      image.src = "zwolnienie.avif";
     }
   } else {
     answer.innerHTML = "Pij nie pierdol!";
+    image.src = "monkey.jpeg";
   }
 }
